@@ -1,0 +1,105 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+
+	
+	<head>
+		<meta charset="utf-8">
+		<title>Form Validation</title>
+	</head>
+	
+	<body style="width: 90%; margin: auto;" >
+		<h1>Course Registration Form</h1>
+		
+		<form>
+			<fieldset>
+				<legend>Personal information</legend><br>
+					<table cellspacing="20">
+						<tr>
+							<td><label for="FN"> <b>First Name</b> </label></td>
+							<td><b>:</b></td>
+							<td><input type="text" name="textbox1" placeholder="Ex: Abraham" required pattern="[a-zA-z0-9]+"></td>
+							
+						</tr>
+				
+						<tr>
+							<td><label for="LN"><b>Last Name</b></label></td>
+							<td><b>:</b></td>
+							<td><input type="text" name="textbox2" placeholder="Ex: Lincoln" required pattern="[a-zA-z0-9]+"></td>
+						</tr>
+						
+						 <tr>
+						 
+							<td><label for="date"><b>Date of Birth</b></label></td>
+							<td><b>:</b></td>
+							<td><input type="date" name="Date of Birth" value="" id="date"></td>
+						</tr>
+
+						<tr>
+							<td><label for="Email"><b>Email</b></label></td>
+							<td><b>:</b></td>
+							<td><input type="email" name="mail" placeholder="Example@gmail.com" required></td>
+						</tr>
+						
+						<tr>
+							<td><label for="Passcode"><b>Password</b></label></td>
+							<td><b>:</b></td>
+							<td><input type="password" name="password" placeholder="Ex: 123456" required></td>
+						</tr>
+						
+						<tr>
+							<td><label for="gen"><b>Gender</b></label></td>
+							<td><b>:</b></td>
+							<td>
+								<input type="radio" name="genden" value="male" checked="male" required>Male
+								<input type="radio" name="genden" value="female" required>FeMale
+								<input type="radio" name="genden" value="others" required>Others
+							</td>
+							
+						</tr>
+						
+						<tr>
+							<td><label for="Religion"><b>Religion</b></label></td>
+							<td><b>:</b></td>
+							<td>
+								<input type="checkbox" name="c1" value="islam">Islam
+								<input type="checkbox" name="c2" value="hindu">Hindu
+								<input type="checkbox" name="c3" value="others">Others
+							</td>
+							
+						</tr>
+					
+					</table>
+				
+			</fieldset><br>
+					
+					<table>
+						
+						<tr>
+							<td><label for="Department"><b>Department</b></label></td>
+							<td><b>:</b></td>
+							<td>
+								<select name="department">
+									<option>CSE</option>
+									<option>EEE</option>
+									<option>LLB</option>
+								</select>
+							</td>
+						</tr>
+					</table><br>
+			
+							<b><p>Comment</p></b></label></td>
+							<textarea name="t1" rows="7" cols="40"></textarea><br><br>
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset">
+						
+						
+					
+		</form>
+	
+	</body>
+
+</html>
+
+
+
